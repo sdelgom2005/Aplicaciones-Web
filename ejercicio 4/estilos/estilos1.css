@@ -1,0 +1,68 @@
+/* ESTILOS 1 - Página principal (principal.html) */
+
+/* Fondo gris claro para toda la página y el tipo de letra */
+body {
+    background-color: #e8e8e8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+/* El título: centrado, en azul oscuro, con fondo blanco y borde azul arriba y abajo como en la foto */
+h1 {
+    width: 600px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+    color: #000099;
+    background-color: #ffffff;
+    border-top: 1px solid #0000ff;
+    border-bottom: 1px solid #0000ff;
+    font-size: 36px;
+}
+
+/* El menú (nav) es vertical, así que le pongo un ancho. No pongo alto porque uso overflow:hidden */
+nav {
+    overflow: hidden;
+    width: 180px;
+    padding: 10px;
+    margin-left: 60px;
+    background-color: #f5adad;                 /* rosa de la foto */
+    border: 2px solid #800000;                 /* borde granate */
+    border-radius: 15px;                       /* esquinas redondeadas */
+    box-shadow: 4px 4px 6px #555555;           /* sombra */
+}
+
+/* Lista del menú. Es un menú vertical así que NO uso list-style:none */
+nav ul {
+    list-style-type: circle;                   /* menú vertical: se quedan los círculos */
+    margin: 0 10px 0 10px;                     /* arriba y abajo 0 porque la separación la da el padding del nav */
+    padding: 0 0 0 20px;
+}
+
+/* Cada elemento de la lista: como es vertical no pongo float, solo separo un poco unos de otros */
+nav ul li {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* ORDEN IMPORTANTE: a:link, a:visited y a:hover */
+
+/* a:link y a:visited llevan el mismo estilo (azul y negrita) */
+a:link {
+    color: #0000ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0000ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* a:hover: cuando paso el ratón el enlace se pone blanco y subrayado como en la foto */
+a:hover {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Codificación para que se vean bien las tildes y la ñ -->
+    <meta charset="UTF-8">
+    <!-- Meta descripción y palabras clave: lo pide la práctica para que los buscadores encuentren la página -->
+    <meta name="description" content="Pagina principal del Ejercicio 4 con un menu vertical que enlaza a la pagina secundaria, a un documento PDF y a Google.">
+    <meta name="keywords" content="pagina principal, enlaces, menú, html, css, ejercicio 4">
+    <meta name="author" content="Saul Delgado Gomez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página (es lo que sale en la pestaña del navegador) -->
+    <title>Pagina Principal - Ejercicio 4</title>
+    <!-- Enlazo el fichero de estilos 1 que esta dentro de la carpeta css -->
+    <link rel="stylesheet" href="estilos/estilos1.css" type="text/css">
+</head>
+<body>
+    <h1>Página Principal</h1>
+
+    <!-- El menú va entre las etiquetas <nav> y es una lista (ul) con enlaces dentro, como pide la practica -->
+    <nav>
+        <ul>
+            <!-- La secundaria se abre en la misma pestaña (no lleva target) -->
+            <li><a href="secundaria.html">Secundaria</a></li>
+            <!-- El documento esta en la carpeta documentos y se abre en otra pestaña con target="_blank" -->
+            <li><a href="documentos/doc.pdf" target="_blank">Documento</a></li>
+            <!-- Google tambien se abre en otra pestaña con target="_blank" -->
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* ESTILOS 2 - Página secundaria (secundaria.html) */
+
+/* Fondo amarillo clarito para la página y tipo de letra */
+body {
+    background-color: #f5f5c0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+/* El título: letras rojas sobre fondo negro, centrado y con borde azul como en la foto */
+h1 {
+    width: 600px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    color: #ff0000;
+    background-color: #000000;
+    border: 1px solid #0000ff;
+    font-size: 36px;
+}
+
+/* El menú (nav) es horizontal. Uso overflow:hidden para que coja el alto solo, por culpa de los float de los li */
+nav {
+    overflow: hidden;
+    width: 100%;
+    padding: 5px 0;
+    background-color: #d3d3d3;                 /* gris */
+    border: 1px solid #666666;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px #888888;
+}
+
+/* Lista del menú horizontal: le quito las bolitas con list-style:none */
+nav ul {
+    list-style: none;
+    margin: 0 10px 0 10px;                     /* arriba y abajo 0, la separación la da el padding del nav */
+    padding: 0;
+}
+
+/* Cada elemento flotando a la izquierda para que se pongan uno al lado del otro */
+nav ul li {
+    float: left;
+    margin-left: 5px;                          /* separo un poco cada opción */
+}
+
+/* ORDEN IMPORTANTE: a:link, a:visited y a:hover */
+
+/* a:link y a:visited iguales (letra oscura y negrita) */
+a:link {
+    display: block;
+    padding: 6px 14px;
+    color: #222222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    display: block;
+    padding: 6px 14px;
+    color: #222222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* a:hover: fondo rojo y letra blanca al pasar el ratón, como el "Email" de la foto */
+a:hover {
+    display: block;
+    padding: 6px 14px;
+    color: #ffffff;
+    background-color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}

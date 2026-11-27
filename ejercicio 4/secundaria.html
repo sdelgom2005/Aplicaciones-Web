@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Codificación para que se vean bien las tildes y la ñ -->
+    <meta charset="UTF-8">
+    <!-- Meta descripción y palabras clave para que los buscadores encuentren la página -->
+    <meta name="description" content="Página secundaria del Ejercicio 4 con un menú horizontal que enlaza a la página principal, un documento, el correo electrónico y YouTube.">
+    <meta name="keywords" content="página secundaria, enlaces, menú horizontal, html, css, ejercicio 4">
+    <meta name="author" content="Saúl Delgado Gómez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página (sale en la pestaña del navegador) -->
+    <title>Página Secundaria - Ejercicio 4</title>
+    <!-- Enlazo el fichero de estilos 2 que está dentro de la carpeta css -->
+    <link rel="stylesheet" href="estilos/estilos2.css" type="text/css">
+</head>
+<body>
+    <h1>Página Secundaria</h1>
+
+    <!-- Menú horizontal dentro de <nav> y hecho con una lista de enlaces -->
+    <nav>
+        <ul>
+            <!-- La principal se abre en el mismo navegador (sin target) -->
+            <li><a href="principal.html">Principal</a></li>
+            <!-- El documento se abre en otra pestaña. Si lo subo a mi nube solo tendría que cambiar este enlace por el de la nube -->
+            <li><a href="documentos/doc.pdf" target="_blank">Documento</a></li>
+            <!-- Enlace de correo electrónico con mailto (CAMBIAR por mi correo) -->
+            <li><a href="mailto:micorreo@ejemplo.com">Email</a></li>
+            <!-- YouTube se abre en otra pestaña con target="_blank" -->
+            <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
